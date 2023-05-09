@@ -20,10 +20,21 @@
 	display: none;
 }
 
+.button--calc {
+	padding: 13px 70px;
+	margin-top: 50px;
+}
+
 @media (min-width: 768px) {
 	.button {
 		font-size: 22px;
 		padding: 20px 70px;
+	}
+
+	.button--calc {
+		font-size: 20px;
+		padding: 25px 50px;
+		margin: 0 55px 0 0;
 	}
 }
 
@@ -40,5 +51,11 @@
 				@include background;
 			}
 		}
+	}
+
+	
+	.button--calc {
+		padding: 25px 60px;
+		margin: 0 30px 0 0;
 	}
 }
