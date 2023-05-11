@@ -1,6 +1,5 @@
 .promo {
-    position: absolute;
-    top: 105px;
+    margin-top: -470px;
     &__title {
         font-size: 28px;
         line-height: 34px;
@@ -98,6 +97,7 @@
 
 @media (min-width: 768px) {
 	.promo{
+        margin-top: -800px;
 		&__title {
             font-size: 35px;
             line-height: 43px;
@@ -173,8 +173,7 @@
 
 @media (min-width: 1140px) {
     .promo {
-        position: relative;
-        top: 0;
+        margin-top: 0;
         &__wrapper {
             display: flex;
         }

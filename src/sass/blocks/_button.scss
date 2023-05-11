@@ -11,6 +11,11 @@
 	font-size: 16px;
 	font-weight: 700;
 	padding: 15px 25px;
+	&__popular {
+		color: #333333;
+		background: linear-gradient(269.89deg, #99CB38 0.07%, #C0F35B 99.89%);
+		padding: 15px 70px;
+	}
 }
 
 .header__toggle--close {
@@ -23,12 +28,19 @@
 .button--calc {
 	padding: 13px 70px;
 	margin-top: 50px;
+	width: 100%;
 }
 
 @media (min-width: 768px) {
 	.button {
+		max-width: 368px;
 		font-size: 22px;
 		padding: 20px 70px;
+
+		&__popular {
+			font-size: 20px;
+			padding: 20px 65px;
+		}
 	}
 
 	.button--calc {

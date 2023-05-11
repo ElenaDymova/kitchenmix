@@ -1,5 +1,6 @@
+//menu burger
 
-const hamburger = document.querySelector('.header__toggle')
+const hamburger = document.querySelector('.header__toggle');
 
 if (hamburger) {
     menu = document.querySelector('.main-nav');
@@ -11,3 +12,6 @@ if (hamburger) {
         phone.classList.toggle('header__phone--active')
     });
 };
+
+//cards
+
