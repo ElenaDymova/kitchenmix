@@ -135,7 +135,7 @@
                     <div class="card__old">19 899 ₽</div>
                     <div class="card__column">
                         <div class="card__price">14 900 ₽</div>
-                        <button class="card__button">
+                        <button class="card__button  card__click">
                             <span class="visually-hidden">Узнать подробнее про модель</span>
                         </button>
                     </div>
@@ -199,6 +199,93 @@
             </ul>
         </div>
     </section>
+
+    <div class="popup">
+        <div class="popup-catalog popup__container">
+            <button type="button" class="popup__close">
+                <span class="visually-hidden">Закрыть окно</span>
+            </button>
+            <div class="popup-catalog__column">
+                <div class="popup-catalog__slider">
+                    <picture>
+                        <source media="(min-width: 1140px)" srcset="img/desktope/popup/popupimgdesk.jpg">
+                        <source media="(min-width: 768px)" srcset="img/768/popup/popupimg768.jpg">
+                        <img src="img/mobile/popup/poupimg.jpg" alt="Кухонный гарнитур" class="popup-catalog__photo">
+                    </picture>
+                    <div class="popup-catalog__images">
+                        <img src="img/768/popup/smallimg1768.jpg" alt="Кухонный гарнитур">
+                        <img src="img/768/popup/smallimg2768.jpg" alt="Схема кухонного гарнитура">
+                        <img src="img/768/popup/smallimg3768.jpg" alt="Цвет кухонного гарантитура">
+                        <img src="img/768/popup/smallimg4768.jpg" alt="Цвет кухонного гарантитура">
+                    </div>
+                    <div class="popup-catalog__points">
+                        <div class="popup-catalog__point"></div>
+                        <div class="popup-catalog__point"></div>
+                        <div class="popup-catalog__point popup-catalog__point--active"></div>
+                        <div class="popup-catalog__point"></div>
+                        <div class="popup-catalog__point"></div>
+                    </div>
+                </div>
+                <div class="popup-catalog__info">
+                    <h2 class="popup-catalog__title">Кухонный гарнитур “Шимо”. Длина 1.2 метра.</h2>
+                    <div class="popup-catalog__buttons">
+                        <a class="popup-catalog__button popup-catalog__button--active popup-catalog__button--description popup-catalog__button--description--active">Описание</a>
+                        <a class="popup-catalog__button popup-catalog__button--characteristic">Характеристики</a>
+                    </div>
+                    <p class="popup-catalog__description">Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, 
+                    позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. 
+                    Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. 
+                    Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. 
+                    Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.</p>
+                    <p class="popup-catalog__characteristic">
+                        Материал корпуса: ЛДСП, <br>
+                        цвет корпуса: БЕЛЫЙ. <br>
+                        Материал фасадов: ЛДСП, <br>
+                        цвет фасадов: Шимо тмный/шимо светлый.<br>
+                        Длина кухонного гарнитура 1.2 метра.<br>
+
+                        Кухня включает в себя:<br>
+                        — Стол на 600 мм, со столешницей - 2 шт.<br>
+                        — Шкаф верхний на 600 мм (с полкой) 2 шт.<br>
+
+                        Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не входит! Товар доставляется в упаковке, схема сборки прилагается!
+                    </p>
+                    <div class="popup-catalog__footer">
+                        <div class="popup-catalog__prices">
+                            <p class="popup-catalog__price">69 620₽</p>
+                            <p class="popup-catalog__old">75 620₽</p>
+                        </div> 
+                        <button class="button button__popup-catalog">Оставить заявку</button>  
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+    <div class="popup-bid popup">
+        <div class="popup-bid__container">
+            <button type="button" class="popup__close">
+                <span class="visually-hidden">Закрыть окно</span>
+            </button>
+            <h2 class="popup-bid__title">Оставить заявку</h2>
+            <div class="popup-bid__name">
+                <img class="popup-bid__photo" src="img/mobile/popup/popup-bid.jpg" alt="Кухонный гарнитур">
+                <div class="popup-bid__text">
+                    <h3 class="popup-bid__description">Кухонный гарнитур “Шимо”. Длина 1.2 метра.</h3>
+                    <div class="popup-bid__prices">
+                        <p class="popup-bid__old">75 620₽</p>
+                        <p class="popup-bid__price">69 620₽</p>
+                    </div>
+                </div>
+            </div>
+            <form class="form popup-bid__form" action="#">
+                <input class="form__input" name="user_name" required type="text" placeholder="Введите ваше имя">
+                <input class="form__input" name="user_phone" required type="text" placeholder="Введите телефон">
+                <button class="button  button__form" name="submit" type="submit">Оставить заявку</button>
+            </form>
+            <p class="popup-bid__politic">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
