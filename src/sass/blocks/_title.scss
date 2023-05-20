@@ -3,11 +3,20 @@
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+
+    & span {
+        font-size: 22px;
+        color: $main-color;
+    }
 }
 
 @media (min-width: 768px) {
     .title {
         font-size: 28px;
         line-height: 30px;
+
+        & span {
+            font-size: 28px;
+        }
     }
 }

@@ -21,6 +21,17 @@
 	&__form {
 		width: 100%;
 	}
+	&__else {
+		font-size: 12px;
+		line-height: 30px;
+		font-weight: 400;
+		background-color: transparent;
+		border: 1px solid black;
+		background: none;
+		box-shadow: none;
+		padding: 5px 35px;
+		margin: 0 auto;
+	}
 }
 
 .header__toggle--close {
@@ -60,6 +71,12 @@
 			font-size: 20px;
 			width: 100%;
 			max-width: 100%;
+		}
+
+		&__else {
+			font-size: 14px;
+			border: 1px solid black;
+			padding: 5px 60px;
 		}
 	}
 
