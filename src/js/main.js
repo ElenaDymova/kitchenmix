@@ -127,19 +127,6 @@ function getItems(className) {
     });
 }
 
-//tabsmobile
-
-const select = document.querySelector('.choice__types'),
-      photoes = document.querySelectorAll('.choice__photo');
-
-function choice() {
-    select.addEventListener('click', event => {
-        const nameId = event.target.dataset.id;
-        console.log(nametId);
-    });
-};
-
-choice();
 
 
 

@@ -240,6 +240,82 @@
         </div>
     </section>
 
+    <section class="calc container">
+        <div class="calc__container">
+            <h2 class="calc__title">Есть замер или эскиз кухни, или просто нашли фото кухни в интернете которая Вам нравится?</h2>
+            <p class="calc__text calc__text--768">Отправьте его нам и мы посчитаем стоимость с учетом Ваших пожеланий!</p>
+            <div class="calc__column">
+                <picture class="calc__photo">
+                    <source media="(min-width: 1140px)" srcset="img/desktope/main/kitchendesk.svg">
+                    <source media="(min-width: 768px)" srcset="img/768/main/kitchen768.svg">
+                    <img src="img/mobile/main/kittchen.svg" alt="Технический рисунок кухни">
+                </picture>
+                <p class="calc__text calc__text--mobile">Отправьте его нам и мы посчитаем стоимость с учетом Ваших пожеланий!</p>
+                <form class="form form__calc calc__form" action="#">
+                    <input class="form__input form__input--calc form__input--right" name="user_name" required type="text" placeholder="Ваше имя">
+                    <input class="form__input form__input--calc" name="user_phone" required type="text" placeholder="Введите телефон">
+                    <p class="form__upload">Вы можете приложить эскиз или фото</p>
+                    <div class="calc__footer">
+                        <button class="button  button__form calc__button" name="submit" type="submit">Рассчитать стоимость</button>
+                        <p class="calc__info calc__info--desk">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+                    </div>
+                </form>
+                <p class="calc__info calc__info--768">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="count">
+        <div class="container  count__container">
+            <div class="count__block">
+                <h2 class="count__title">Пройдите тест за 1 минуту и <span>узнайте стоимость</span> вашей будущей кухни прямо сейчас</h2>
+                <p class="count__gift">И получите один из подарков при заказе кухни.</p>
+            </div>
+            <div class="count__calc">
+                <picture class="count__photo">
+                    <source media="(min-width: 1140px)" srcset="img/desktope/main/quizdesk.jpg">
+                    <source media="(min-width: 768px)" srcset="img/768/main/quiz0768.jpg">
+                    <img class="count__photo" src="img/mobile/main/quiz0.jpg" alt="Дизайн кухни">
+                </picture>
+                <div class="count__column">
+                    <p class="count__text">Ответьте на 5 вопросов и получите дизайн проект и расчет стоимость кухни </p>
+                    <p class="count__add"><span class="plus">+</span>гарантированый подарок при заказе кухни!</p>
+                    <button class="button count__button">Узнать стоимость</button>
+                </div>
+            </div>
+            <p class="count__decor"><span>Кухни Микс</span>- это :</p>
+            <ul class="count__advantages">
+                <li class="count__item">
+                    <img class="count__img" src="img/mobile/main/advantage1.svg" alt="installment plan">
+                    <h3 class="count__advantage">рассрочка без переплаты</h3>
+                    <p class="count__description">Мы не делаем наценок. 
+                        Наши цены заморожены с 2015 года</p>
+                </li>
+                <li class="count__item">
+                    <img class="count__img" src="img/mobile/main/advantage2.svg" alt="discount">
+                    <h3 class="count__advantage">СКИДКИ</h3>
+                    <p class="count__description">При заказе кухни матовая
+                        столешница 26 мм 
+                        - в подарок!</p>
+                </li>
+                <li class="count__item">
+                    <img class="count__img" src="img/mobile/main/advantage3.svg" alt="door">
+                    <h3 class="count__advantage count__advantage--color">БОЛЕЕ 500
+                        ЦВЕТОВ ФАСАДОВ</h3>
+                    <p class="count__description">Цветовые решения
+                        на любой вкус</p>
+                </li>
+                <li class="count__item">
+                    <img class="count__img" src="img/mobile/main/advantage4.svg" alt="ruler">
+                    <h3 class="count__advantage count__advantage--calc">БЕСПЛАТНЫЙ ЗАМЕР
+                        И ДИЗАЙН ПРОЕКТ</h3>
+                    <p class="count__description">Бесплатный дизайн проект
+                        кухни за 1 день</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <div class="popup">
         <div class="popup-catalog popup__container">
             <button type="button" class="popup__close">
@@ -319,7 +395,7 @@
                 </div>
             </div>
             <form class="form popup-bid__form" action="#">
-                <input class="form__input" name="user_name" required type="text" placeholder="Введите ваше имя">
+                <input class="form__input" name="user_name" required type="text" placeholder="Ваше имя">
                 <input class="form__input" name="user_phone" required type="text" placeholder="Введите телефон">
                 <button class="button  button__form" name="submit" type="submit">Оставить заявку</button>
             </form>
