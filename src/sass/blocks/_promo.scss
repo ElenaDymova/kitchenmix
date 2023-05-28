@@ -173,7 +173,11 @@
 
 @media (min-width: 1140px) {
     .promo {
+        background-image: url("../../img/photo/main/mainphoto.png");
+        background-repeat: no-repeat;
+        background-position: 210% 50%;
         margin-top: 0;
+        padding-bottom: 60px;
         &__wrapper {
             display: flex;
         }

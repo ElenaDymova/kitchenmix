@@ -1,3 +1,108 @@
 .works {
     background-color: $main-color;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    &__title {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        span {
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+
+    &__slider {
+        margin-top: 30px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-image: url(../img/mobile/main/prev.svg);
+            position: absolute;
+            left: -12px;
+            top: 50%;
+        }
+
+        &::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-image: url(../img/mobile/main/next.svg);
+            position: absolute;
+            right: -12px;
+            top: 50%;
+        }
+    }
+
 }
+
+@media (min-width: 768px) {
+    .works {
+        padding-top: 45px;
+        padding-bottom: 55px;
+        &__title {
+            font-size: 28px;
+            line-height: 30px;
+            span {
+                font-size: 28px;
+                line-height: 30px;  
+            }
+        }
+
+        &__slider {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &::after {
+                width: 50px;
+                height: 50px;
+                background-image: url(../img/768/main/next768.svg);
+                right: -25px;
+            }
+    
+            &::before {
+                width: 50px;
+                height: 50px;
+                background-image: url(../img/768/main/prev768.svg);
+                left: -25px;
+            }
+        }
+
+        &__photo {
+            width: 48%;
+            &--third {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1140px) {
+    .works {
+       padding-top: 35px;
+       padding-bottom: 40px;
+
+       &__slider {
+        grid-template-columns: 360px 360px 360px;
+        column-gap: 30px;
+       }
+
+       &__photo {
+        width: 31%;
+        &--third {
+            display: block;
+        }
+    }
+    }
+}
+
