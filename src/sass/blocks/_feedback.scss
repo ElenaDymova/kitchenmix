@@ -51,13 +51,13 @@
             margin-top: 35px;
         }
 
+        &__inputs {
+            width: 100%;
+        }
+
         &__column {
             display: flex;
             align-items: center;
-        }
-
-        &__inputs {
-            margin-right: 70px;
         }
 
         &__footer {
@@ -87,7 +87,7 @@
     .feedback {
         background-image: url("../../img/desktope/main/formimgdesk.png");
         background-repeat: no-repeat;
-        background-position: 100% 50%;
+        background-position: 67vw 50%;
         &__title {
             font-weight: 800;
             font-size: 28px;
@@ -106,6 +106,7 @@
             display: flex;
             column-gap: 30px;
             margin-right: 0;
+            margin-right: 70px;
         }
 
         &__form {
@@ -118,3 +119,4 @@
         }
     }
 }
+
