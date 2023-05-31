@@ -444,11 +444,19 @@
         <div class="works__container container">
             <h2 class="works__title">Наши <span>работы</span></h2>
             <div class="works__slider">
-                <img class="works__photo" src="img/mobile/main/works1.jpg" alt="Дизайн кухни">
-                <img class="works__photo" src="img/mobile/main/works2.jpg" alt="Дизайн кухни">
-                <img class="works__photo  works__photo--third" src="img/mobile/main/works3.jpg" alt="Дизайн кухни">
-                <a class="works__prev" onclick="plusSlides(-1)">&#10094</a>
-                <a class="works__next" onclick="plusSlides(1)">&#10095</a>
+                <div class="works__div">
+                    <img class="works__photo" src="img/mobile/main/works1.jpg" alt="Дизайн кухни">
+                </div>
+                <div class="works__div">
+                    <img class="works__photo works__photo--two" src="img/mobile/main/works2.jpg" alt="Дизайн кухни">
+                </div>
+                <div class="works__div">
+                    <img class="works__photo  works__photo--third" src="img/mobile/main/works3.jpg" alt="Дизайн кухни">
+                </div>
+                <button class="works__prev"><img src="img/mobile/main/prev.svg" alt="">
+                    <span class="visually-hidden">Предыдущее фото</span></button>
+                <button class="works__next"><img src="img/mobile/main/next.svg" alt="">
+                    <span class="visually-hidden">Следующее фото</span></button>
             </div>
         </div>
     </section>
@@ -508,23 +516,16 @@
             </button>
             <div class="popup-catalog__column">
                 <div class="popup-catalog__slider">
-                    <picture>
-                        <source media="(min-width: 1140px)" srcset="img/desktope/popup/popupimgdesk.jpg">
-                        <source media="(min-width: 768px)" srcset="img/768/popup/popupimg768.jpg">
-                        <img src="img/mobile/popup/poupimg.jpg" alt="Кухонный гарнитур" class="popup-catalog__photo">
-                    </picture>
+                        <picture>
+                            <source media="(min-width: 1140px)" srcset="img/desktope/popup/popupimgdesk.jpg">
+                            <source media="(min-width: 768px)" srcset="img/768/popup/popupimg768.jpg">
+                            <img src="img/mobile/popup/poupimg.jpg" alt="Кухонный гарнитур" class="popup-catalog__photo">
+                        </picture>
                     <div class="popup-catalog__images">
                         <img src="img/768/popup/smallimg1768.jpg" alt="Кухонный гарнитур">
                         <img src="img/768/popup/smallimg2768.jpg" alt="Схема кухонного гарнитура">
                         <img src="img/768/popup/smallimg3768.jpg" alt="Цвет кухонного гарантитура">
                         <img src="img/768/popup/smallimg4768.jpg" alt="Цвет кухонного гарантитура">
-                    </div>
-                    <div class="popup-catalog__points">
-                        <div class="popup-catalog__point"></div>
-                        <div class="popup-catalog__point"></div>
-                        <div class="popup-catalog__point popup-catalog__point--active"></div>
-                        <div class="popup-catalog__point"></div>
-                        <div class="popup-catalog__point"></div>
                     </div>
                 </div>
                 <div class="popup-catalog__info">
@@ -587,6 +588,7 @@
             <p class="popup-bid__politic">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
         </div>
     </div>
+
 
     <script src="js/main.js"></script>
 </body>
