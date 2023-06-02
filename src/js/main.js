@@ -180,3 +180,15 @@ function showNextSlide(direction) {
     nextSlide.classList.remove('hidden');
     nextSlide.setAttribute('data-active', '');
  }
+
+
+//  //calc
+//  const countBtn = document.querySelector('.count__button');
+//  if (countBtn) {
+//     countCalc = document.querySelector('.count__calc');
+//     type = document.querySelector('.type');
+//     countBtn.addEventListener("click", function(e){
+//         countCalc.style.display = "none";
+//         type.style.display = "block";
+//     });
+// };
