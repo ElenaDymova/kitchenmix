@@ -62,9 +62,10 @@ img {
 
   body {
     position: relative;
-    &--lock {
-      overflow: hidden;
-    }
+  }
+
+  .body--lock {
+    overflow: hidden;
   }
 
 .container {
