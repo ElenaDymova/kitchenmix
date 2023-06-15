@@ -115,7 +115,7 @@
         <div class="container header__container">
             <div class="header-mobile">
                 <picture>
-                    <img class="header__logo" src="img/logo.svg" alt="Логотип фирмы Кухни-микс">
+                    <a><img class="header__logo" src="img/logo.svg" alt="Логотип фирмы Кухни-микс"></a>
                 </picture>
                 <a class="header__phone" href="tel:+73466681598">+7 (3466) 68-15-98</a>
                 <button class="header__toggle" type="button">
@@ -171,7 +171,7 @@
                     <li class="promo__advantage promo__advantage--time">Соблюдение сроков изготовления <br> <span>Если не выполним в срок – мы заплатим Вам неустойку</span></li>
                 </ul>
                     <div class="promo__calc">
-                        <button class="button button--calc">Рассчитать стоимость</button>
+                        <a href="#calculator" class="button button--calc">Рассчитать стоимость</a>
                         <p class="promo__gift">Пройдите тест из 5 вопросов <br> и получите дизайн проект, <br> и расчет стоимость кухни <br> <span>+ гарантированный подарок при заказе кухни!</span></p>
                     </div>
             </div>
@@ -249,7 +249,7 @@
                         </button>
                     </div>
                 </li>
-                <li class="popular__button"><button class="button button__popular">Смотреть все товары</button></li>
+                <li class="popular__button"><a href="catalog.html" class="button button__popular">Смотреть все товары</a></li>
             </ul>
         </div>
     </section>
@@ -308,30 +308,84 @@
         </div>
     </section>
 
-    <section class="count">
+    <section id="calculator" class="count">
         <div class="container  count__container">
             <div class="count__block">
                 <h2 class="count__title">Пройдите тест за 1 минуту и <span>узнайте стоимость</span> вашей будущей кухни прямо сейчас</h2>
                 <p class="count__gift">И получите один из подарков при заказе кухни.</p>
             </div>
-            <div class="count__calc">
-                <picture class="count__photo">
-                    <source media="(min-width: 1140px)" srcset="img/desktope/main/quizdesk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/768/main/quiz0768.jpg">
-                    <img class="count__photo" src="img/mobile/main/quiz0.jpg" alt="Дизайн кухни">
-                </picture>
-                <p class="count__number"><span>0</span>/5</p>
-                <div class="count__column">
-                    <p class="count__text">Ответьте на 5 вопросов и получите дизайн проект и расчет стоимость кухни </p>
-                    <p class="count__add"><span class="plus">+</span>гарантированый подарок при заказе кухни!</p>
-                    <button class="button count__button">Узнать стоимость</button>
-                </div>
-            </div>
-            <div class="type">
-                <h2 class="type__title">Какое <span>расположение кухни</span> вас интересует</h2>
+        
+                <section class="count__calc count__quiz  count__quiz--main">
+                    <picture class="count__photo">
+                        <source media="(min-width: 1140px)" srcset="img/desktope/main/quizdesk.jpg">
+                        <source media="(min-width: 768px)" srcset="img/768/main/quiz0768.jpg">
+                        <img class="count__photo" src="img/mobile/main/quiz0.jpg" alt="Дизайн кухни">
+                    </picture>
+                    <p class="count__number"><span>0</span>/5</p>
+                    <div class="count__column">
+                        <p class="count__text">Ответьте на 5 вопросов и получите дизайн проект и расчет стоимость кухни </p>
+                        <p class="count__add"><span class="plus">+</span>гарантированый подарок при заказе кухни!</p>
+                        <button class="button count__button">Узнать стоимость</button>
+                    </div>
+                </section>
+                <div class="quiz" id="quiz">
+                <section class="count__quiz type">
+                    <p class="count__number"><span>1</span>/5</p>
+                    <fieldset>
+                        <legend class="title__quiz">Какое <span>расположение кухни</span> вас интересует</legend>
+                        <div class="type__column">
+                            <label class="type__name type__name--right">
+                                <input class="type__radio type__radio--real" type="radio" name="type" checked>
+                                <span class="type__radio type__radio--custom"></span>
+                                Прямая
+                            </label>
+                            <label class="type__name type__name--corner">
+                                <input class="type__radio type__radio--real" type="radio" name="type">
+                                <span class="type__radio type__radio--custom"></span>
+                                Угловая
+                            </label>
+                            <label class="type__name type__name--p">
+                                <input class="type__radio type__radio--real" type="radio" name="type">
+                                <span class="type__radio type__radio--custom"></span>
+                                П-образная
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="count__buttons">
+                        <button class="button__quiz button__quiz--back type__back"><span class="visually-hidden">Назад</span></button>
+                        <button class="button__quiz button__quiz--next button type__next">Далее</button>
+                    </div>
+                </section>
+                <section class="count__quiz size">
+                    <p class="count__number"><span>2</span>/5</p>
+                    <p class="title__quiz size__title">Введите <span>размеры</span> кухни:</p>
+                    <div class="size__column">
+                        <img class="size__photo" src="img/mobile/main/sizecalc.png" alt="Изображение кухни 3D">
+                        <div class="size__filter">
+                            <div class="size__section">
+                                <p class="size__name">Сторона А (см)</p>
+                                <p class="size__number">280</p>
+                            </div>
+                            <div class="size__section">
+                                <p class="size__name">Сторона А (см)</p>
+                                <p class="size__number">280</p>
+                            </div>
+                        <div class="size__section">
+                            <p class="size__name">Сторона А (см)</p>
+                            <p class="size__number">280</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="count__buttons">
+                        <button class="button__quiz button__quiz--back"><span class="visually-hidden">Назад</span></button>
+                        <button class="button__quiz button__quiz--next button">Далее</button>
+                    </div>
+                </section>
+        </div>
+    </section>
 
-            </div>
-            <p class="count__decor"><span>Кухни Микс</span>- это :</p>
+    <section>
+        <p class="count__decor"><span>Кухни Микс</span>- это :</p>
             <ul class="count__advantages">
                 <li class="count__item">
                     <img class="count__img" src="img/mobile/main/advantage1.svg" alt="installment plan">
@@ -361,7 +415,6 @@
                         кухни за 1 день</p>
                 </li>
             </ul>
-        </div>
     </section>
 
     <section class="materials">
@@ -532,7 +585,7 @@
     <footer class="main-footer">
         <div class="main-footer__container container">
             <div class="main-footer__info">
-                <img class="main-footer__logo" src="img/mobile/main/logofooter.svg" alt="">
+                <a><img class="main-footer__logo" src="img/mobile/main/logofooter.svg" alt=""></a>
                 <p class="main-footer__adress">г. Нижневартовск, <br> ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик №20а</p>
             </div>
             <ul class="main-footer__sections">

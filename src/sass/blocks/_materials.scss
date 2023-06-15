@@ -26,6 +26,7 @@
         display: grid;
         grid-template-rows: auto auto 50px;
         margin-bottom: 35px;
+        border: 2px solid transparent;
         &:last-child {
             margin-bottom: 0;
         }
@@ -95,7 +96,7 @@
      }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .materials {
         &__title {
             font-size: 24px;
@@ -119,7 +120,7 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
     .materials {
         &__title {
             margin-top: 95px;

@@ -241,7 +241,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
 	.header {
 		&__container {
 			.header-mobile {
@@ -262,7 +262,7 @@
 	}
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
 	.header {
 		&-main {
 			box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
@@ -283,6 +283,17 @@
 				line-height: 20px;
 				color: black;
 				padding: 15px 0;
+				position: relative;
+
+				&::before {
+					content: '';
+					position: absolute;
+					width: 23px;
+					height: 25px;
+					top: 10px;
+					left: -35px;
+					background-image: url("../img/icons/main/phonedesctope.svg");
+				}
 			}
 
 			&__adress {
@@ -290,6 +301,17 @@
 				font-size: 14px;
 				line-height: 17px;
 				padding-left: 20px;
+				position: relative;
+
+				&::before {
+					content: '';
+					width: 12px;
+					height: 15px;
+					background-image: url("../img/icons/main//vectodesktope.svg");
+					position: absolute;
+					top: 0px;
+					left: 0;
+				}
 			}
 		}
 

@@ -2,6 +2,17 @@
     margin-top: 30px;
     @include background;
 
+    &__quiz {
+        background-color: white;
+        margin-top: 30px;
+        border-radius: 10px;
+        position: relative;
+        padding: 22px 15px 55px 15px;
+        &--main {
+            padding: 0;
+        }
+    }
+
     &__container {
         padding-top: 30px;
         padding-bottom: 40px;
@@ -35,13 +46,6 @@
         line-height: 17px;
     }
 
-    &__calc {
-        background-color: white;
-        margin-top: 30px;
-        border-radius: 10px;
-        position: relative;
-    }
-
     &__photo {
         border-top-left-radius: 10px;    
         border-top-right-radius: 10px;
@@ -57,6 +61,9 @@
         right: 15px;
         span {
             color: $main-color;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
         }
     }
 
@@ -155,11 +162,25 @@
     &__img {
         margin: 0 auto;
     }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-self: normal;
+        margin-top: 40px;    
+    }
 }
 
 @media (min-width: 768px) {
     .count {
         margin-top: 74px;
+
+        &__quiz {
+            padding: 25px 15px;
+            &--main {
+                padding: 0;
+            }
+        }
 
         &__container {
             padding-top: 40px;
@@ -293,11 +314,24 @@
             width: 70px;
             height: 70px;
         }
+
+        &__buttons {
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
 }
 
 @media (min-width: 1140px) {
     .count {
+        &__quiz {
+            padding: 40px 30px;
+            &--main {
+                padding: 0;
+            }
+        }
+
         &__container {
             padding-top: 60px;
             padding-bottom: 65px;

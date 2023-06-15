@@ -45,7 +45,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .calc {
         margin-top: 60px;
 
@@ -124,7 +124,7 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
     .calc {
 
         &__container {

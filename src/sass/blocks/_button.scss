@@ -13,6 +13,10 @@
 		background: linear-gradient(269.89deg, #99CB38 0.07%, #C0F35B 99.89%);
 		padding: 15px 70px;
 		margin: 0 auto;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
 	}
 	&__popup-catalog {
 		margin-top: 25px;
@@ -32,6 +36,45 @@
 		padding: 5px 35px;
 		margin: 0 auto;
 	}
+
+	&__quiz{
+		&--back {
+			width: 50px;
+       		height: 50px;
+        	border-radius: 50px;
+        	background-color: white;
+        	border: 1px solid black;
+        	position: relative;
+        	&::before {
+            	content: '';
+            	width: 10px;
+            	height: 11px;
+            	top: 50%;
+            	left: 50%;
+            	transform: translate(-50%, -50%);
+            	position: absolute;
+            	background-image: url("../../img/mobile/main/back.svg");
+			}
+		}
+
+		&--next {
+			font-weight: 500;
+        	font-size: 18px;
+        	line-height: 22px;
+        	padding: 10px 35px;
+       		position: relative;
+        	&::after {
+            	content: '';
+            	width: 10px;
+            	height: 9px;
+           		background-image: url("../../img/mobile/main/nextcalc.svg");
+            	position: absolute;
+            	top: 50%;
+            	transform: translateY(-50%);
+            	right: 20px;
+       	 	}
+		}
+    }
 }
 
 .header__toggle--close {
@@ -47,7 +90,7 @@
 	width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
 	.button {
 		max-width: 368px;
 		font-size: 22px;
@@ -78,6 +121,20 @@
 			border: 1px solid black;
 			padding: 5px 60px;
 		}
+
+		&__quiz {
+			&--back {
+				width: 40px;
+				height: 40px;
+			}
+	
+			&--next {
+				margin-left: 30px;
+				&::after {
+					right: 45px;
+				}
+			}
+		}
 	}
 
 	.button--calc {
@@ -87,7 +144,7 @@
 	}
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
 	.button {
 		&--nav {
 			min-width: 195px;
@@ -106,6 +163,18 @@
 		&__popup-catalog {
 			font-size: 20px;
 			padding: 15px 25px;
+		}
+
+		&__quiz {
+			&--back {
+				width: 50px;
+				height: 50px;
+			}
+			&--next {
+				font-weight: 500;
+            	font-size: 20px;
+           		line-height: 24px;
+			}
 		}
 	}
 
