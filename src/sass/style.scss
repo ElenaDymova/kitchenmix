@@ -1,94 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"');
 @import 'base/variables';
+@import 'base/global';
 @import 'base/mixins';
-
-* {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: light;
-    margin: 0;
-    padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  a {
-    text-decoration: none;
-    outline: none;
-  }
-
-.visually-hidden {
-    position: absolute;
-  
-    width: 1px;
-    height: 1px;
-    border: 0;
-    padding: 0;
-    margin: -1px;
-  
-    white-space: nowrap;
-  
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    position: relative;
-  }
-
-  .body--lock {
-    overflow: hidden;
-  }
-
-.container {
-    margin: 0 auto;
-    width: 100%;
-    min-width: 375px;
-    padding: 0 15px;
-
-    @media (min-width: 768px) {
-      padding: 0 30px;
-    }
-  
-    @media (min-width: 1160px) {
-      max-width: 1140px;
-      padding: 0;
-      margin: 0 auto;
-    }
-}
-
-.hidden {
-  display: none;
-}
-
 @import 'blocks/header';
 @import 'blocks/button';
 @import 'blocks/main-nav';
@@ -107,3 +21,4 @@ img {
 @import 'blocks/feedback';
 @import 'blocks/main-footer';
 @import 'blocks/type';
+@import 'blocks/size';

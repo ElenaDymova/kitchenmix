@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .popular {
         margin-top: 80px;
         &__title {
@@ -42,7 +42,7 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
     .popular {
         padding-bottom: 50px;
         margin-top: 0;

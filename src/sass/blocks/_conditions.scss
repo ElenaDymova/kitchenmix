@@ -39,7 +39,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .conditions {
         margin-top: 90px;
         margin-bottom: 54px;
@@ -67,7 +67,7 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
     .conditions {
         margin-top: 100px;
         margin-bottom: 100px;

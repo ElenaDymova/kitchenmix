@@ -36,7 +36,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .feedback {
         padding-top: 50px;
         padding-bottom: 60px;
@@ -83,7 +83,7 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
     .feedback {
         background-image: url("../../img/desktope/main/formimgdesk.png");
         background-repeat: no-repeat;
