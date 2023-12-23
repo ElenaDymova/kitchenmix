@@ -52,7 +52,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .form {
         &__upload {
             margin-top: 0;
@@ -73,7 +73,7 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
     .form {
 
         &__input {

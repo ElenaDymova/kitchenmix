@@ -49,7 +49,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .works {
         padding-top: 45px;
         padding-bottom: 55px;
@@ -68,7 +68,7 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: $desktope-width) {
     .works {
        padding-top: 35px;
        padding-bottom: 40px;
