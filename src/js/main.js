@@ -1,15 +1,18 @@
 //menu burger
 
-const hamburger = document.querySelector('.header__toggle');
+const hamburger = document.querySelector('.main-nav__toggle');
 
 if (hamburger) {
-    menu = document.querySelector('.main-nav');
+    menu = document.querySelector('.main-nav__content');
+    header = document.querySelector('.header-main');
+    phone = document.querySelector('.main-nav__number');
 
     hamburger.addEventListener("click", function(e){
         document.body.classList.toggle('body--lock');
         hamburger.classList.toggle('header__toggle--active');
-        menu.classList.toggle('main-nav--active');
-        phone.classList.toggle('header__phone--active')
+        menu.classList.toggle('main-nav__content--active');
+        header.classList.toggle('header-main--active');
+        phone.classList.toggle('main-nav__number--active');
     });
 };
 

@@ -88,6 +88,7 @@
 	padding: 13px 70px;
 	margin-top: 50px;
 	width: 100%;
+	text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -147,6 +148,20 @@
 @media (min-width: $desktope-width) {
 	.button {
 		&--nav {
+			min-width: 195px;
+			min-height: 50px;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 15px 25px;
+			background: transparent;
+			border: 1px solid $main-color;
+			box-shadow: none;
+			&:hover {
+				@include background;
+			}
+		}
+
+		&--naw {
 			min-width: 195px;
 			min-height: 50px;
 			font-size: 16px;
