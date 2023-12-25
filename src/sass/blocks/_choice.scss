@@ -39,8 +39,13 @@
     }
 
     &__photo {
+        display: none;
         position: relative;
         margin-bottom: 20px;
+        
+        &.econom {
+            display: block;
+        }
 
         img {
             width: 100%;
