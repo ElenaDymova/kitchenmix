@@ -1,17 +1,6 @@
 .count {
-    margin-top: 30px;
     @include background;
-
-    &__quiz {
-        background-color: white;
-        margin-top: 30px;
-        border-radius: 10px;
-        position: relative;
-        padding: 22px 15px 55px 15px;
-        &--main {
-            padding: 0;
-        }
-    }
+    margin-top: 30px;
 
     &__container {
         padding-top: 30px;
@@ -44,70 +33,6 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-    }
-
-    &__photo {
-        border-top-left-radius: 10px;    
-        border-top-right-radius: 10px;
-        width: 100%;
-    }
-
-    &__number {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        position: absolute;
-        top: 20px;
-        right: 15px;
-        span {
-            color: $main-color;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
-        }
-    }
-
-    &__column {
-       padding: 0 15px 45px 15px;
-    }
-
-    &__text {
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 20px;
-        text-transform: uppercase;
-        margin-top: 50px;
-        position: relative;
-        &::before {
-            content: '';
-            width: 50px;
-            height: 3px;
-            background-color: $main-color;
-            position: absolute;
-            top: -17px;
-            left: 0;
-            border-radius: 10px;
-        }
-    }
-
-    &__add {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        text-transform: uppercase;
-        margin-top: 30px;
-        
-        span {
-            color: $decoration-color;
-            padding-right: 5px;
-        }
-    }
-
-    &__button {
-        margin-top: 40px;
-        width: 100%;
-        font-weight: 500;
-        font-size: 18px;
     }
 
     &__decor {
@@ -171,16 +96,10 @@
     }
 }
 
+
 @media (min-width: 768px) {
     .count {
         margin-top: 74px;
-
-        &__quiz {
-            padding: 25px 15px;
-            &--main {
-                padding: 0;
-            }
-        }
 
         &__container {
             padding-top: 40px;
@@ -218,58 +137,6 @@
                 height: 31px;
                 top: -3px;
                 left: 80px;
-            }
-        }
-
-        &__calc {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: 354px 1fr;
-            align-items: center;
-        }
-
-        &__column {
-            padding: 0;
-            padding: 40px 15px 0 10px;
-        }
-
-        &__text {
-            margin-top: 0;
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        &__add {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 20px;
-            margin-top: 35px;
-        }
-
-        &__button {
-            font-size: 18px;
-            max-width: 265px;
-            padding: 15px 40px;
-            margin-top: 50px;
-        }
-
-        &__photo {
-            width: 354px;
-            height: 421px;
-            display: block;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-        }
-
-        &__number {
-            top: 25px;
-            font-size: 22px;
-            line-height: 27px;
-
-            span {
-                font-size: 22px;
-                line-height: 27px; 
             }
         }
 
@@ -325,13 +192,6 @@
 
 @media (min-width: 1140px) {
     .count {
-        &__quiz {
-            padding: 40px 30px;
-            &--main {
-                padding: 0;
-            }
-        }
-
         &__container {
             padding-top: 60px;
             padding-bottom: 65px;
@@ -355,44 +215,6 @@
             &::before {
                 left: 260px;
             }
-        }
-
-        &__photo {
-            width: 620px;
-            height: 560px;
-        }
-
-        &__number {
-            top: 40px;
-            right: 40px;
-        }
-
-        &__calc {
-            grid-template-columns: 620px 1fr;
-        }
-
-        &__column {
-            padding-left: 35px;
-        }
-
-        &__text {
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 27px;
-            &::before {
-                top: -35px;
-            }
-        }
-
-        &__add {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        &__button {
-            margin-top: 50px;
-            font-size: 20px;
         }
 
         &__decor {

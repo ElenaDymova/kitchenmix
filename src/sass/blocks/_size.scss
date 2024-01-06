@@ -1,33 +1,33 @@
-.size {
-   &__title {
-    padding: 0;
-   }
+// .size {
+//    &__title {
+//     padding: 0;
+//    }
 
-   &__photo {
-    margin: 0 auto;
-    display: block;
-    margin-top: 30px;
-   }
+//    &__photo {
+//     margin: 0 auto;
+//     display: block;
+//     margin-top: 30px;
+//    }
 
-   &__filter {
-    margin-top: 60px;
-   }
+//    &__filter {
+//     margin-top: 60px;
+//    }
 
-   &__column {
-    display: block;
-   }
-}
+//    &__column {
+//     display: block;
+//    }
+// }
 
-@media (min-width: $tablet-width) {
-    .size {
-        &__photo {
-            margin: 0;
-        }
+// @media (min-width: $tablet-width) {
+//     .size {
+//         &__photo {
+//             margin: 0;
+//         }
 
-        &__column {
-            display: flex;
-            margin-top: 60px;
-            justify-content: space-between;
-        }
-    }
-}
+//         &__column {
+//             display: flex;
+//             margin-top: 60px;
+//             justify-content: space-between;
+//         }
+//     }
+// }
