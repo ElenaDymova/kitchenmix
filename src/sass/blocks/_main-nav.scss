@@ -96,6 +96,10 @@
 			color: $decoration-color;
 			text-decoration: none;
 		}
+
+        &--active {
+            color: $decoration-color;
+        }
 	}
 
     &__phone {
