@@ -18,6 +18,10 @@
         margin-top: 40px;
     }
 
+    &__type {
+        display: none;
+    }
+
      &__item {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         padding: 20px 15px;

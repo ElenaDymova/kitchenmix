@@ -5,3 +5,7 @@ import './slider.js';
 import './quiz.js';
 import './quiz-type.js';
 import './size.js';
+import './popup-choice.js';
+import './popup-send.js';
+import './popup-materisla.js';
+import './popup-call.js';
