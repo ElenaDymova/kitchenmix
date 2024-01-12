@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     popularList.addEventListener('click', (event) => {
         const card = event.target.closest('.popular__item');
+        event.stopPropagation();
 
         if (card) {
             const kitchenName = card.querySelector('.card__name').textContent;
@@ -93,3 +94,5 @@ document.addEventListener('DOMContentLoaded', () => {
         characteristicContent.style.display = 'block';
     });
 });
+
+
