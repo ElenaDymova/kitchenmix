@@ -1,24 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const popup = document.querySelector('.popup-call');
-    const closeButton = popup.querySelector('.popup-call__close');
-    const openButton = document.querySelector('.main-nav__button');
-    const popupButton = document.querySelector('.popup-call__button');
+import { openPopupSend } from "./popup-send.js"; 
 
-    openButton.addEventListener('click', () =>{
-        popup.style.display = "block";
-        document.body.style.overflow = "hidden";
-    });
+const popupCall = document.querySelector('.popup-call');
+const closeCallButton = popupCall.querySelector('.popup-call__close');
+const openCallButton = document.querySelector('.main-nav__button');
+const popupCallButton = document.querySelector('.popup-call__button');
+const formCall = document.querySelector('.popup-call__form');
 
-    closeButton.addEventListener('click', () =>{
+
+openCallButton.addEventListener('click', (event) => {
+    popupCall.style.display = "block";
+    document.body.style.overflow = "hidden";
+    popupCall.style.zIndex = "9999";
+});
+
+closeCallButton.addEventListener('click', () => {
+    closePopupCall();
+});
+
+function closePopupCall() {
+    popupCall.style.display = "none";
+    document.body.style.overflow = "auto";
+    popupCall.style.zIndex = "";
+}
+
+popupCallButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Предотвращаем стандартное поведение кнопки
+    if (formCall.checkValidity()) {
         closePopupCall();
-    });
-
-    popupButton.addEventListener('click', () =>{
-        closePopupCall();
-    });
-
-    function closePopupCall() {
-        popup.style.display = "none";
-        document.body.style.overflow = "auto";
+        formCall.reset();
+        openPopupSend();
+    } else {
+        alert('Заполните все обязательные поля формы!');
     }
 });

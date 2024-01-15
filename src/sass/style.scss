@@ -3,7 +3,6 @@
 @import 'base/variables';
 @import 'base/global';
 @import 'base/mixins';
-@import 'blocks/header';
 @import 'blocks/header-main';
 @import 'blocks/button';
 @import 'blocks/main-nav';
@@ -18,13 +17,12 @@
 @import 'blocks/count';
 @import 'blocks/materials';
 @import 'blocks/conditions';
-@import 'blocks/works';
 @import 'blocks/feedback';
 @import 'blocks/main-footer';
-@import 'blocks/type';
-@import 'blocks/size';
+@import 'blocks/popup-bid';
 @import 'blocks/quiz';
 @import 'blocks/popup-choice';
 @import 'blocks/popup-send';
 @import 'blocks/popup-materials';
-@import 'blocks/popup-call.scss';
+@import 'blocks/popup-call';
+@import 'blocks/catalog';

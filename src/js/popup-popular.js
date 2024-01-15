@@ -1,3 +1,5 @@
+import { openPopupBid } from './popup-bid.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const popularList = document.querySelector('.popular__list');
     const popup = document.querySelector('.popup');
@@ -8,10 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const characteristicButton = modal.querySelector('.popup-catalog__button--characteristic');
     const descriptionContent = modal.querySelector('.popup-catalog__description');
     const characteristicContent = modal.querySelector('.popup-catalog__characteristic');
+    const buttonBid = popup.querySelector('.button__popup-catalog');
 
 
     popularList.addEventListener('click', (event) => {
         const card = event.target.closest('.popular__item');
+        event.stopPropagation();
 
         if (card) {
             const kitchenName = card.querySelector('.card__name').textContent;
@@ -92,4 +96,12 @@ document.addEventListener('DOMContentLoaded', () => {
         descriptionContent.style.display = 'none';
         characteristicContent.style.display = 'block';
     });
+
+    buttonBid.addEventListener('click', () => {
+        openPopupBid();
+        closeModal();
+        document.body.style.overflow = "hidden";
+    });
 });
+
+
