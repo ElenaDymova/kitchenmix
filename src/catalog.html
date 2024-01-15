@@ -493,19 +493,7 @@
         </div>       
     </div>
 
-    <div class="popup-send">
-        <div class="popup-send__body">
-            <div class="popup-send__content">
-                <button type="button" class="popup-send__close">
-                    <span class="visually-hidden">Закрыть окно</span>
-                </button>
-                <h2 class="popup-send__title">Заявка отправлена&#33;</h2>
-                <p class="popup-send__text">Благодарим вас&#33; Наш специалист свяжется с вами по телефону в ближайшее время для уточнения деталей.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-call">
+<div class="popup-call">
         <div class="popup-call__body">
             <div class="popup-call__content">
                 <button type="button" class="popup-call__close">
@@ -515,9 +503,9 @@
                     <h2 class="popup-call__title">Заказать звонок</h2>
                     <p class="popup-call__text">Вы можете задать любой интересующий Вас вопрос, 
                         уточнить цены, вызвать замерщика, проконсультироваться о продукции.</p>
-                    <form class="form popup-materials__form" action="#">
+                    <form class="form popup-call__form" action="#">
                         <input class="form__input form__input" name="user_name" required type="text" placeholder="Ваше имя">
-                        <input class="form__input form__input" name="user_phone" required type="text" placeholder="Введите телефон">
+                        <input class="form__input form__input" name="user_phone" required type="text" inputmode="tel" placeholder="+7(900)000-00-00">
                         <button class="button  button__form popup-call__button send" name="submit" type="submit">Позвоните мне</button>
                     </form>
                     <p class="popup-call__politic">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
@@ -526,28 +514,44 @@
         </div>
     </div>
 
-    <div class="popup-bid popup">
-        <div class="popup-bid__container">
-            <button type="button" class="popup__close">
-                <span class="visually-hidden">Закрыть окно</span>
-            </button>
-            <h2 class="popup-bid__title">Оставить заявку</h2>
-            <div class="popup-bid__name">
-                <img class="popup-bid__photo" src="img/mobile/popup/popup-bid.jpg" alt="Кухонный гарнитур">
-                <div class="popup-bid__text">
-                    <h3 class="popup-bid__description">Кухонный гарнитур “Шимо”. Длина 1.2 метра.</h3>
-                    <div class="popup-bid__prices">
-                        <p class="popup-bid__old">75 620₽</p>
-                        <p class="popup-bid__price">69 620₽</p>
+    <div class="popup-bid">
+        <div class="popup-bid__body">
+            <div class="popup-bid__content">
+                <button type="button" class="popup-bid__close">
+                    <span class="visually-hidden">Закрыть окно</span>
+                </button>
+                <div class="popup-bid__column">
+                    <h2 class="popup-bid__title">Оставить заявку</h2>
+                    <div class="popup-bid__name">
+                        <img class="popup-bid__photo" src="img/mobile/popup/popup-bid.jpg" alt="Кухонный гарнитур">
+                        <div class="popup-bid__text">
+                            <h3 class="popup-bid__description">Кухонный гарнитур “Шимо”. Длина 1.2 метра.</h3>
+                            <div class="popup-bid__prices">
+                                <p class="popup-bid__old">75 620₽</p>
+                                <p class="popup-bid__price">69 620₽</p>
+                            </div>
+                        </div>
                     </div>
+                    <form class="form popup-bid__form" action="#">
+                        <input class="form__input" name="user_name" required type="text" placeholder="Ваше имя">
+                        <input class="form__input" name="user_phone" required type="text" inputmode="tel" placeholder="+7(900)000-00-00">
+                        <button class="button  button__form" name="submit" type="submit">Оставить заявку</button>
+                    </form>
+                    <p class="popup-bid__politic">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
                 </div>
             </div>
-            <form class="form popup-bid__form" action="#">
-                <input class="form__input" name="user_name" required type="text" placeholder="Ваше имя">
-                <input class="form__input" name="user_phone" required type="text" placeholder="Введите телефон">
-                <button class="button  button__form" name="submit" type="submit">Оставить заявку</button>
-            </form>
-            <p class="popup-bid__politic">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+        </div>
+    </div>
+
+    <div class="popup-send">
+        <div class="popup-send__body">
+            <div class="popup-send__content">
+                <button type="button" class="popup-send__close">
+                    <span class="visually-hidden">Закрыть окно</span>
+                </button>
+                <h2 class="popup-send__title">Заявка отправлена&#33;</h2>
+                <p class="popup-send__text">Благодарим вас&#33; Наш специалист свяжется с вами по телефону в ближайшее время для уточнения деталей.</p>
+            </div>
         </div>
     </div>
 
