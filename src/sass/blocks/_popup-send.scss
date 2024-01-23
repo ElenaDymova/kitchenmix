@@ -24,7 +24,7 @@
     }
 
     &__close {
-        background-image: url(../../img/mobile/popup/close.svg); 
+        background-image: url(../img/mobile/popup/close.svg); 
         width: 32px;
         height: 32px;
         background-color: transparent;
@@ -51,7 +51,7 @@
             left: 50%;
             width: 133px;
             height: 136px;
-            background-image: url("../../img/mobile/popup/popup-send.svg");
+            background-image: url("../img/mobile/popup/popup-send.svg");
             transform: translateX(-50%);
         }
     }

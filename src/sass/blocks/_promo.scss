@@ -48,23 +48,23 @@
         }
         &--installment {
             &::before {
-                background-image: url("../../img/icons/main/installment.svg");
+                background-image: url("../img/icons/main/installment.svg");
             }
         }
         &--color {
             &::before {
-                background-image: url("../../img/icons/main/door.svg");
+                background-image: url("../img/icons/main/door.svg");
             }
         }
         &--calc {
             &::before {
                 content:'';
-                background-image: url("../../img/icons/main/design.svg");
+                background-image: url("../img/icons/main/design.svg");
             }
         }
         &--time {
             &::before {
-                background-image: url("../../img/icons/main/time.svg");
+                background-image: url("../img/icons/main/time.svg");
             }
         }
     }
@@ -83,7 +83,7 @@
         &::before {
             content:'';
             position: absolute;
-            background-image: url("../../img/icons/main/gift.svg");
+            background-image: url("../img/icons/main/gift.svg");
             top: -45px;
             left: 50%;
             width: 27px;
@@ -130,12 +130,12 @@
             &--installment {
                 padding-right: 150px;
                 &::before {
-                    background-image: url("../../img/icons/main/installment768.svg");
+                    background-image: url("../img/icons/main/installment768.svg");
                 }
             }
             &--color {
                 &::before {
-                    background-image: url("../../img/icons/main/door768.svg");
+                    background-image: url("../img/icons/main/door768.svg");
                     top: -7px;
                 }
             }
@@ -143,13 +143,13 @@
                 padding-right: 150px;
                 &::before {
                     content:'';
-                    background-image: url("../../img/icons/main/design768.svg");
+                    background-image: url("../img/icons/main/design768.svg");
                 }
             }
             &--time {
                 padding-right: 77px;
                 &::before {
-                    background-image: url("../../img/icons/main/time768.svg");
+                    background-image: url("../img/icons/main/time768.svg");
                 }
             }
         }
@@ -173,7 +173,7 @@
 
 @media (min-width: $desktope-width) {
     .promo {
-        background-image: url("../../img/photo/main/mainphoto.png");
+        background-image: url("../img/photo/main/mainphoto.png");
         background-repeat: no-repeat;
         background-position: 61vw 0;
         background-size: auto 100%;

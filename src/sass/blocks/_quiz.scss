@@ -104,7 +104,7 @@
         &--right {
             &::before {
                 content: '';
-                background-image: url("../../img/mobile/main/right.png");
+                background-image: url("../img/mobile/main/right.png");
                 width: 262px;
                 height: 108px;
                 position: absolute;
@@ -115,7 +115,7 @@
         &--corner {
             &::before {
                 content: '';
-                background-image: url("../../img/mobile/main/corner.png");
+                background-image: url("../img/mobile/main/corner.png");
                 width: 262px;
                 height: 221px;
                 position: absolute;
@@ -126,7 +126,7 @@
         &--p {
             &::before {
                 content: '';
-                background-image: url("../../img/mobile/main/p-form.png");
+                background-image: url("../img/mobile/main/p-form.png");
                 width: 262px;
                 height: 219px;
                 position: absolute;
