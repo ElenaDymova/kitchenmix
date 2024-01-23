@@ -5,6 +5,8 @@ const cleanCSS = require("gulp-clean-css");
 const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
+const webpack = require('webpack-stream');
+const webpackConfig = require('./webpack.config.js');
 
 gulp.task("server", function () {
 	browserSync({
@@ -45,9 +47,10 @@ gulp.task("html", function () {
 
 gulp.task("scripts", function () {
 	return gulp
-		.src("src/js/**/*.js")
-		.pipe(gulp.dest("docs/js"))
-		.pipe(browserSync.stream());
+    .src("src/js/**/*.js")
+    .pipe(webpack(webpackConfig))
+    .pipe(gulp.dest("docs/js"))
+    .pipe(browserSync.stream())
 });
 
 gulp.task("fonts", function () {
